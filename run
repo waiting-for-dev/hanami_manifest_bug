@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "hanami/assets"
+require "hanami/assets/helpers"
+require_relative "config"
+
+include Hanami::Assets::Helpers
+
+$stdout.puts(stylesheet "parent.css")
